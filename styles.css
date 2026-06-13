@@ -233,12 +233,19 @@ a {
 
 .model-lab {
   background: #eef4f1;
+  text-align: left;
+}
+
+.model-inner {
+  width: min(100%, 1180px);
+  margin: 0 auto;
 }
 
 .model-shell {
   display: grid;
-  grid-template-columns: minmax(280px, 0.9fr) minmax(280px, 0.7fr);
+  grid-template-columns: minmax(360px, 1fr) minmax(320px, 420px);
   gap: 18px;
+  align-items: stretch;
   margin-top: 30px;
 }
 
@@ -256,13 +263,23 @@ a {
   min-height: 420px;
   place-items: center;
   overflow: hidden;
+  padding: 24px;
 }
 
 .model-preview img,
 .webcam-container canvas {
   display: block;
-  width: min(100%, 520px);
+  width: min(100%, 420px);
+  aspect-ratio: 1;
   height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.webcam-container {
+  display: grid;
+  width: 100%;
+  place-items: center;
 }
 
 .empty-preview {
@@ -301,6 +318,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  justify-content: space-between;
   padding: 24px;
 }
 
@@ -315,13 +333,14 @@ a {
 }
 
 .model-actions {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 10px;
 }
 
 .upload-button {
   cursor: pointer;
+  width: 100%;
 }
 
 #image-upload {
@@ -335,6 +354,7 @@ a {
 .prediction-list {
   display: grid;
   gap: 14px;
+  align-content: start;
 }
 
 .prediction-placeholder {
@@ -549,6 +569,15 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .model-preview {
+    min-height: 360px;
+  }
+
+  .model-preview img,
+  .webcam-container canvas {
+    width: min(100%, 340px);
+  }
+
   .hero {
     min-height: auto;
   }
@@ -591,5 +620,15 @@ a {
   .model-actions label,
   .contact-actions {
     width: 100%;
+  }
+
+  .model-lab {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .model-preview,
+  .model-panel {
+    padding: 18px;
   }
 }
