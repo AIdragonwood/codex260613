@@ -1,210 +1,196 @@
 <!doctype html>
 <html lang="zh-Hant">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="GitHub 個人網站範本，適合展示開源專案、作品集與開發者資訊。"
-    />
+    <meta name="description" content="GitHub 個人網站範本，適合展示開源專案、作品集與開發者資訊。" />
     <title>Silver's GitHub Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="回到首頁">
-        <span class="brand-mark">GH</span>
-        <span>GitHub Studio</span>
-      </a>
-      <nav class="nav" aria-label="主要導覽">
-        <a href="#projects">專案</a>
-        <a href="#model">AI 模型</a>
-        <a href="#workflow">流程</a>
-        <a href="#contact">聯絡</a>
-      </nav>
-      <a class="header-action" href="https://github.com/" target="_blank" rel="noreferrer">
-        前往 GitHub
-      </a>
+        <a class="brand" href="#top" aria-label="回到首頁">
+            <span class="brand-mark">GH</span>
+            <span>GitHub Studio</span>
+        </a>
+        <nav class="nav" aria-label="主要導覽">
+            <a href="#projects">專案</a>
+            <a href="#model">拍拍 AI 辨識</a>
+            <a href="#workflow">流程</a>
+            <a href="#contact">聯絡</a>
+        </nav>
+        <a class="header-action" href="https://github.com/" target="_blank" rel="noreferrer">
+            前往 GitHub
+        </a>
     </header>
-
     <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-content">
-          <p class="eyebrow">Open source portfolio</p>
-          <h1 id="hero-title">把你的 GitHub 專案整理成一個漂亮、好逛的網站。</h1>
-          <p class="hero-copy">
-            展示代表作品、技術能力、貢獻紀錄與聯絡方式。這個網站可以直接放到
-            GitHub Pages，改文字、換連結就能成為你的個人入口。
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#projects">瀏覽專案</a>
-            <a class="button secondary" href="#contact">更新個人資料</a>
-          </div>
-        </div>
-        <div class="hero-visual" aria-label="GitHub 專案視覺化卡片">
-          <img src="assets/repo-dashboard.svg" alt="GitHub repository dashboard preview" />
-        </div>
-      </section>
-
-      <section class="stats" aria-label="GitHub 摘要">
-        <article>
-          <strong>28</strong>
-          <span>Repositories</span>
-        </article>
-        <article>
-          <strong>14k</strong>
-          <span>Lines shipped</span>
-        </article>
-        <article>
-          <strong>9</strong>
-          <span>Tech stacks</span>
-        </article>
-        <article>
-          <strong>100%</strong>
-          <span>Pages ready</span>
-        </article>
-      </section>
-
-      <section class="section" id="projects" aria-labelledby="projects-title">
-        <div class="section-heading">
-          <p class="eyebrow">Selected work</p>
-          <h2 id="projects-title">代表專案</h2>
-          <p>用標籤快速切換不同類型的作品，讓訪客直接看到他們在意的內容。</p>
-        </div>
-
-        <div class="filters" role="group" aria-label="專案篩選">
-          <button class="filter is-active" type="button" data-filter="all">全部</button>
-          <button class="filter" type="button" data-filter="web">Web</button>
-          <button class="filter" type="button" data-filter="automation">自動化</button>
-          <button class="filter" type="button" data-filter="data">資料</button>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card" data-category="web">
-            <div class="card-topline">
-              <span class="language-dot teal"></span>
-              <span>TypeScript</span>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <p class="eyebrow">Open source portfolio</p>
+                <h1 id="hero-title">把你的 GitHub 專案整理成一個漂亮、好逛的網站。</h1>
+                <p class="hero-copy">
+                    展示代表作品、技術能力、貢獻紀錄與聯絡方式。這個網站可以直接放到
+                    GitHub Pages，改文字、換連結就能成為你的個人入口。
+                </p>
+                <div class="hero-actions">
+                    <a class="button primary" href="#projects">瀏覽專案</a>
+                    <a class="button secondary" href="#contact">更新個人資料</a>
+                </div>
             </div>
-            <h3>Portfolio Pages</h3>
-            <p>一頁式個人網站，包含作品集、服務介紹與社群入口。</p>
-            <a href="https://github.com/" target="_blank" rel="noreferrer">查看 repo</a>
-          </article>
-          <article class="project-card" data-category="automation">
-            <div class="card-topline">
-              <span class="language-dot gold"></span>
-              <span>Python</span>
+            <div class="hero-visual" aria-label="GitHub 專案視覺化卡片">
+                <img src="assets/repo-dashboard.svg" alt="GitHub repository dashboard preview" />
             </div>
-            <h3>Release Helper</h3>
-            <p>自動產生 changelog、版本標籤與發布摘要，讓維護流程更順。</p>
-            <a href="https://github.com/" target="_blank" rel="noreferrer">查看 repo</a>
-          </article>
-          <article class="project-card" data-category="data">
-            <div class="card-topline">
-              <span class="language-dot coral"></span>
-              <span>Notebook</span>
+        </section>
+        <section class="stats" aria-label="GitHub 摘要">
+            <article>
+                <strong>28</strong>
+                <span>Repositories</span>
+            </article>
+            <article>
+                <strong>14k</strong>
+                <span>Lines shipped</span>
+            </article>
+            <article>
+                <strong>9</strong>
+                <span>Tech stacks</span>
+            </article>
+            <article>
+                <strong>100%</strong>
+                <span>Pages ready</span>
+            </article>
+        </section>
+        <section class="section" id="projects" aria-labelledby="projects-title">
+            <div class="section-heading">
+                <p class="eyebrow">Selected work</p>
+                <h2 id="projects-title">代表專案</h2>
+                <p>用標籤快速切換不同類型的作品，讓訪客直接看到他們在意的內容。</p>
             </div>
-            <h3>Data Lens</h3>
-            <p>資料探索與視覺化範例，適合展示分析思路和決策結果。</p>
-            <a href="https://github.com/" target="_blank" rel="noreferrer">查看 repo</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="model-lab" id="model" aria-labelledby="model-title">
-        <div class="model-inner">
-          <div class="section-heading">
-            <p class="eyebrow">Teachable Machine</p>
-            <h2 id="model-title">AI 影像辨識模型</h2>
-            <p>
-              這裡已接上你匯出的 Teachable Machine 模型，可以上傳圖片，或在支援相機的瀏覽器中開啟即時辨識。
-            </p>
-          </div>
-
-          <div class="model-shell">
-            <div class="model-preview" aria-live="polite">
-              <img id="image-preview" alt="待辨識圖片預覽" hidden />
-              <div id="webcam-container" class="webcam-container"></div>
-              <div class="empty-preview" id="empty-preview">
-                <span>224</span>
-                <strong>Image model ready</strong>
-                <p>上傳圖片或啟動相機開始辨識。</p>
-              </div>
+            <div class="filters" role="group" aria-label="專案篩選">
+                <button class="filter is-active" type="button" data-filter="all">全部</button>
+                <button class="filter" type="button" data-filter="web">Web</button>
+                <button class="filter" type="button" data-filter="automation">自動化</button>
+                <button class="filter" type="button" data-filter="data">資料</button>
             </div>
-
-            <div class="model-panel">
-              <div class="model-status" id="model-status">模型尚未載入</div>
-              <div class="model-actions">
-                <label class="button primary upload-button" for="image-upload">上傳圖片</label>
-                <input id="image-upload" type="file" accept="image/*" />
-                <button class="button secondary" id="webcam-toggle" type="button">啟動相機</button>
-              </div>
-              <div class="prediction-list" id="prediction-list" aria-label="辨識結果">
-                <p class="prediction-placeholder">載入模型後會在這裡顯示信心分數。</p>
-              </div>
+            <div class="project-grid">
+                <article class="project-card" data-category="web">
+                    <div class="card-topline">
+                        <span class="language-dot teal"></span>
+                        <span>TypeScript</span>
+                    </div>
+                    <h3>Portfolio Pages</h3>
+                    <p>一頁式個人網站，包含作品集、服務介紹與社群入口。</p>
+                    <a href="https://github.com/" target="_blank" rel="noreferrer">查看 repo</a>
+                </article>
+                <article class="project-card" data-category="automation">
+                    <div class="card-topline">
+                        <span class="language-dot gold"></span>
+                        <span>Python</span>
+                    </div>
+                    <h3>Release Helper</h3>
+                    <p>自動產生 changelog、版本標籤與發布摘要，讓維護流程更順。</p>
+                    <a href="https://github.com/" target="_blank" rel="noreferrer">查看 repo</a>
+                </article>
+                <article class="project-card" data-category="data">
+                    <div class="card-topline">
+                        <span class="language-dot coral"></span>
+                        <span>Notebook</span>
+                    </div>
+                    <h3>Data Lens</h3>
+                    <p>資料探索與視覺化範例，適合展示分析思路和決策結果。</p>
+                    <a href="https://github.com/" target="_blank" rel="noreferrer">查看 repo</a>
+                </article>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="workflow" id="workflow" aria-labelledby="workflow-title">
-        <div>
-          <p class="eyebrow">How it works</p>
-          <h2 id="workflow-title">讓訪客用三步理解你</h2>
-        </div>
-        <ol class="timeline">
-          <li>
-            <span>01</span>
+        </section>
+        <section class="model-lab" id="model" aria-labelledby="model-title">
+            <div class="model-inner">
+                <div class="section-heading">
+                    <p class="eyebrow">Teachable Machine</p>
+                    <h2 id="model-title">AI 影像辨識模型</h2>
+                    <p>
+                        這裡已接上你匯出的 Teachable Machine 模型，可以上傳圖片，或在支援相機的瀏覽器中開啟即時辨識。
+                        可以上傳正電拍拍或是負電拍拍的圖片，模型會告訴你他是誰
+                    </p>
+                </div>
+                <div class="model-shell">
+                    <div class="model-preview" aria-live="polite">
+                        <img id="image-preview" alt="待辨識圖片預覽" hidden />
+                        <div id="webcam-container" class="webcam-container"></div>
+                        <div class="empty-preview" id="empty-preview">
+                            <span>224</span>
+                            <strong>Image model ready</strong>
+                            <p>上傳圖片或啟動相機開始辨識。</p>
+                        </div>
+                    </div>
+                    <div class="model-panel">
+                        <div class="model-status" id="model-status">模型尚未載入</div>
+                        <div class="model-actions">
+                            <label class="button primary upload-button" for="image-upload">上傳圖片</label>
+                            <input id="image-upload" type="file" accept="image/*" />
+                            <button class="button secondary" id="webcam-toggle" type="button">啟動相機</button>
+                        </div>
+                        <div class="prediction-list" id="prediction-list" aria-label="辨識結果">
+                            <p class="prediction-placeholder">載入模型後會在這裡顯示信心分數。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="workflow" id="workflow" aria-labelledby="workflow-title">
             <div>
-              <h3>快速定位</h3>
-              <p>首頁直接說明你做什麼、擅長什麼，減少陌生訪客的理解成本。</p>
+                <p class="eyebrow">How it works</p>
+                <h2 id="workflow-title">讓訪客用三步理解你</h2>
             </div>
-          </li>
-          <li>
-            <span>02</span>
+            <ol class="timeline">
+                <li>
+                    <span>01</span>
+                    <div>
+                        <h3>快速定位</h3>
+                        <p>首頁直接說明你做什麼、擅長什麼，減少陌生訪客的理解成本。</p>
+                    </div>
+                </li>
+                <li>
+                    <span>02</span>
+                    <div>
+                        <h3>展示成果</h3>
+                        <p>專案卡片用簡短描述、技術標籤和 repo 連結，把亮點放在第一層。</p>
+                    </div>
+                </li>
+                <li>
+                    <span>03</span>
+                    <div>
+                        <h3>建立連結</h3>
+                        <p>聯絡區保留 GitHub、Email 和 LinkedIn，方便合作、面試或交流。</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+        <section class="contact" id="contact" aria-labelledby="contact-title">
             <div>
-              <h3>展示成果</h3>
-              <p>專案卡片用簡短描述、技術標籤和 repo 連結，把亮點放在第一層。</p>
+                <p class="eyebrow">Contact</p>
+                <h2 id="contact-title">把這裡換成你的資料</h2>
+                <p>更新名稱、簡介、專案和社群連結後，就可以把整個資料夾發布到 GitHub Pages。</p>
             </div>
-          </li>
-          <li>
-            <span>03</span>
-            <div>
-              <h3>建立連結</h3>
-              <p>聯絡區保留 GitHub、Email 和 LinkedIn，方便合作、面試或交流。</p>
+            <div class="contact-actions">
+                <a class="button primary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="button secondary" href="mailto:hello@example.com">Email</a>
+                <a class="button secondary" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+                    LinkedIn
+                </a>
             </div>
-          </li>
-        </ol>
-      </section>
-
-      <section class="contact" id="contact" aria-labelledby="contact-title">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">把這裡換成你的資料</h2>
-          <p>更新名稱、簡介、專案和社群連結後，就可以把整個資料夾發布到 GitHub Pages。</p>
-        </div>
-        <div class="contact-actions">
-          <a class="button primary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="button secondary" href="mailto:hello@example.com">Email</a>
-          <a class="button secondary" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
-            LinkedIn
-          </a>
-        </div>
-      </section>
+        </section>
     </main>
-
     <footer class="site-footer">
-      <span>Built for GitHub Pages.</span>
-      <button class="to-top" type="button" aria-label="回到頂部">↑</button>
+        <span>Built for GitHub Pages.</span>
+        <button class="to-top" type="button" aria-label="回到頂部">↑</button>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.7.4/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
