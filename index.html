@@ -24,6 +24,7 @@
       </a>
       <nav class="nav" aria-label="主要導覽">
         <a href="#projects">專案</a>
+        <a href="#model">AI 模型</a>
         <a href="#workflow">流程</a>
         <a href="#contact">聯絡</a>
       </nav>
@@ -115,6 +116,40 @@
         </div>
       </section>
 
+      <section class="model-lab" id="model" aria-labelledby="model-title">
+        <div class="section-heading">
+          <p class="eyebrow">Teachable Machine</p>
+          <h2 id="model-title">AI 影像辨識模型</h2>
+          <p>
+            這裡已接上你匯出的 Teachable Machine 模型，可以上傳圖片，或在支援相機的瀏覽器中開啟即時辨識。
+          </p>
+        </div>
+
+        <div class="model-shell">
+          <div class="model-preview" aria-live="polite">
+            <img id="image-preview" alt="待辨識圖片預覽" hidden />
+            <div id="webcam-container" class="webcam-container"></div>
+            <div class="empty-preview" id="empty-preview">
+              <span>224</span>
+              <strong>Image model ready</strong>
+              <p>上傳圖片或啟動相機開始辨識。</p>
+            </div>
+          </div>
+
+          <div class="model-panel">
+            <div class="model-status" id="model-status">模型尚未載入</div>
+            <div class="model-actions">
+              <label class="button primary upload-button" for="image-upload">上傳圖片</label>
+              <input id="image-upload" type="file" accept="image/*" />
+              <button class="button secondary" id="webcam-toggle" type="button">啟動相機</button>
+            </div>
+            <div class="prediction-list" id="prediction-list" aria-label="辨識結果">
+              <p class="prediction-placeholder">載入模型後會在這裡顯示信心分數。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="workflow" id="workflow" aria-labelledby="workflow-title">
         <div>
           <p class="eyebrow">How it works</p>
@@ -166,6 +201,8 @@
       <button class="to-top" type="button" aria-label="回到頂部">↑</button>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.7.4/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
